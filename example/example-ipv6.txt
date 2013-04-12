@@ -1,0 +1,164 @@
+area 0.0.0.0
+
+	router 217.31.48.5
+		distance 0
+		network [217.31.48.122-38] metric 100
+		external 2001:1ab0:f15:2::/64 metric 100
+		external 2001:1ab0:f15::/64 metric 100
+		external 2001:1ab0:f15:1::/64 metric 100
+
+	router 217.31.48.9
+		distance 100
+		network [217.31.48.122-38] metric 1000
+
+	router 217.31.48.14
+		distance 100
+		network [217.31.48.122-38] metric 100
+		external 2001:1ab0:b0f4:53::/64 metric 100
+
+	router 217.31.48.36
+		distance 110
+		network [217.31.48.122-77] metric 100
+		external 2001:1ab0:b0f4:53::/64 metric 100
+
+	router 217.31.48.121
+		distance 100
+		network [217.31.48.122-69] metric 100
+		network [217.31.48.122-38] metric 10
+		external 2001:1ab0:b0f4:ffff::6/128 metric 10
+		external 2001:1ab0:7e1f:1::/64 metric 10
+		external 2001:1ab0:7e1f:4::/64 metric 10
+		external 2001:1ab0:7e1e:1::/64 metric 10
+		external 2001:1ab0:7e1e:4::/64 metric 10
+		external 2001:1ab0:7e1e:d150::/64 metric 10
+		external 2001:1ab0:7e1f:3::/64 metric 10
+		external 2001:1ab0:7e1e:5::/64 metric 10
+		external 2001:1ab0:7e1e:6::/64 metric 10
+		external 2001:1ab0:7e1e:c0e::/64 metric 10
+		external 2001:1ab0:7e1e:c57::/64 metric 10
+		external 2001:1ab0:7e1e:c571::/64 metric 10
+		external 2001:1ab0:7e1e:c573::/64 metric 10
+		external 2001:1ab0:7e1e:c574::/64 metric 10
+        	external 2001:1ab0:7e1e:e003::/64 metric 10
+		external 2001:1ab0:b102::/48 metric 10
+		external 2a01:8c00:ff00::/40 metric 10
+
+	router 217.31.48.122
+		distance 100
+		network [217.31.48.122-77] metric 10
+		network [217.31.48.125-145] metric 12
+		network [217.31.48.122-69] metric 100
+		network [217.31.48.122-38] metric 10
+		external 2001:1ab0:b0f4:ffff::5/128 metric 10
+		external 2001:1ab0:7e1e:d150::/64 metric 10
+		external 2a01:8c00:ff00::/40 metric 10
+		external 2001:1ab0:7e1e:e003::/64 metric 10
+		external 2001:1ab0:7e1e:c575::/64 metric 10
+		external 2001:1ab0:7e1e:e002::/64 metric 10
+		external 2001:1ab0:7e1e:c576::/64 metric 10
+		external 2001:1ab0:7e1f:e002::/64 metric 10
+		external 2001:1ab0:7e1f:e100::/56 metric 10
+		external 2001:1ab0:7e1e:4::/64 metric 10
+		external 2001:1ab0:7e1f:1::/64 metric 10
+		external 2001:1ab0:7e1f:4::/64 metric 10
+		external 2001:1ab0:7e1e:1::/64 metric 10
+		external 2001:1ab0:7e1f:3::/64 metric 10
+		external 2001:1ab0:7e1e:c0e::/64 metric 10
+		external 2001:1ab0:7e1e:c57::/64 metric 10
+		external 2001:1ab0:7e1e:c571::/64 metric 10
+		external 2001:1ab0:7e1e:c573::/64 metric 10
+		external 2001:1ab0:7e1e:c574::/64 metric 10
+		external 2001:1ab0:b102::/48 metric 10
+		external 2001:1ab0:f001:face::/64 metric 10
+		external 2001:1ab0:7e1e:5::/64 metric 10
+		external 2001:1ab0:7e1e:6::/64 metric 10
+		external 2001:1ab0:10:300::/64 metric 10
+
+	router 217.31.48.123
+		distance 100
+		network [217.31.48.125-54] metric 25
+		network [217.31.48.125-29] metric 10
+		network [217.31.48.125-144] metric 12
+		network [217.31.48.122-38] metric 10
+		external 2001:1ab0:b0f4:ffff::2/128 metric 10
+        	external 2001:1ab0::/32 metric 10
+		external 2a01:8c00::/32 metric 10
+		external ::/0 metric 11 tag 00000001
+		external 2001:1ab0:b0f4:4::/64 metric 10
+		external 2001:7f8:14::/64 metric 10
+		external 2001:1ab0:b0f4:6::/64 metric 10
+		external 2001:1ab0:7e1e:e001::/64 metric 10
+		external 2a02:d28:5580:114:1115::/126 metric 10
+
+	router 217.31.48.125
+		distance 110
+		network [217.31.48.125-145] metric 25
+		network [217.31.48.125-144] metric 12
+		network [217.31.48.125-29] metric 10
+		network [217.31.48.125-54] metric 25
+		stubnet 2001:1ab0:b0f4:1::/64 metric 10
+		external 2001:1ab0:b0f4:ffff::1/128 metric 10
+		external 2001:1ab0::/32 metric 10
+		external 2a01:8c00::/32 metric 10
+		external 2001:470:1:348::/126 metric 10
+		external 2001:4de8:b0ba:29:134::/80 metric 10
+		external 2001:7f8:14::/64 metric 10
+		external 2001:1ab0:b0f4:5::/64 metric 10
+
+	router 217.31.48.194
+		distance 200
+		network [217.31.48.122-69] metric 100
+		external 2001:1ab0:7e1e:2::/64 metric 100
+
+	router 217.31.48.195
+		distance 200
+		network [217.31.48.122-69] metric 100
+		external 2001:1ab0:7e1e:2::/64 metric 100
+
+	network [217.31.48.122-38]
+		distance 100
+		router 217.31.48.122
+		router 217.31.48.14
+		router 217.31.48.123
+		router 217.31.48.5
+		router 217.31.48.9
+		router 217.31.48.121
+		address 2001:1ab0:b0f4::/64
+
+	network [217.31.48.122-69]
+		distance 200
+		router 217.31.48.122
+		router 217.31.48.195
+		router 217.31.48.194
+		router 217.31.48.121
+		address 2001:1ab0:7e1e:3::/64
+
+	network [217.31.48.122-77]
+		distance 110
+		router 217.31.48.122
+		router 217.31.48.36
+		address 2001:1ab0:b0f4:9::/64
+
+	network [217.31.48.125-29]
+		distance 110
+		router 217.31.48.125
+		router 217.31.48.123
+		address 2001:1ab0:b0f4:2::/64
+
+	network [217.31.48.125-54]
+		distance 125
+		router 217.31.48.125
+		router 217.31.48.123
+		address 2001:1ab0:b0f4:3::/64
+
+	network [217.31.48.125-144]
+		distance 112
+		router 217.31.48.125
+		router 217.31.48.123
+		address 2001:1ab0:b0f4:8::/64
+
+	network [217.31.48.125-145]
+		distance 112
+		router 217.31.48.125
+		router 217.31.48.122
+		address 2001:1ab0:b0f4:7::/64

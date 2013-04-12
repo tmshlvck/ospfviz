@@ -1,0 +1,229 @@
+area 0.0.0.0
+
+	router 217.31.48.5
+		distance 0
+		network 217.31.48.0/28 metric 100
+		external 217.31.63.0/26 metric 100
+		external 62.109.136.0/25 metric 100
+		external 62.109.136.128/25 metric 100
+		external 62.109.143.0/24 metric 100
+
+	router 217.31.48.9
+		distance 100
+		network 217.31.48.0/28 metric 1000
+
+	router 217.31.48.14
+		distance 100
+		network 217.31.48.0/28 metric 100
+		external 217.31.53.48/29 metric 100
+
+	router 217.31.48.20
+		distance 10110
+		network 217.31.48.100/30 metric 10000
+		external 62.109.141.192/27 metric 1000
+
+	router 217.31.48.36
+		distance 110
+		network 217.31.48.32/28 metric 100
+		external 217.31.53.48/29 metric 100
+
+	router 217.31.48.121
+		distance 100
+		network 217.31.48.192/29 metric 100
+		network 217.31.48.0/28 metric 10
+		external 217.31.48.121/32 metric 10
+		external 217.31.53.176/28 metric 10
+		external 217.31.55.128/25 metric 10
+		external 217.31.56.0/24 metric 10
+		external 217.31.57.0/24 metric 10
+		external 217.31.62.0/25 metric 10
+		external 217.31.62.128/25 metric 10
+		external 62.109.128.0/25 metric 10
+        	external 62.109.129.0/24 metric 10
+		external 62.109.130.0/24 metric 10
+		external 62.109.134.0/24 metric 10
+		external 62.109.142.0/24 metric 10
+		external 62.109.144.128/25 metric 10
+		external 62.109.145.0/25 metric 10
+		external 62.109.146.0/24 metric 10
+
+	router 217.31.48.122
+		distance 100
+		network 217.31.48.32/28 metric 10
+		network 217.31.48.92/30 metric 12
+		network 217.31.48.0/28 metric 10
+		network 217.31.48.192/29 metric 100
+		external 217.31.48.122/32 metric 10
+		external 217.31.48.128/27 metric 10
+		external 217.31.48.160/27 metric 10
+		external 217.31.49.0/24 metric 10 via 217.31.48.6
+		external 217.31.50.0/24 metric 10
+		external 217.31.51.0/24 metric 10 via 217.31.48.4
+		external 217.31.52.0/24 metric 10 via 217.31.48.4
+		external 217.31.53.0/29 metric 10 via 217.31.48.4
+		external 217.31.53.8/29 metric 10 via 217.31.48.4
+		external 217.31.53.16/29 metric 10 via 217.31.48.4
+		external 217.31.53.24/29 metric 10 via 217.31.48.4
+		external 217.31.53.32/28 metric 10
+		external 217.31.53.48/28 metric 10 via 217.31.48.4
+		external 217.31.53.64/28 metric 10
+		external 217.31.53.80/29 metric 10 via 217.31.48.4
+		external 217.31.53.88/29 metric 10
+		external 217.31.53.96/28 metric 10 via 217.31.48.4
+		external 217.31.53.112/28 metric 10 via 217.31.48.4
+		external 217.31.53.152/29 metric 10 via 217.31.48.4
+		external 217.31.53.160/28 metric 10
+		external 217.31.53.176/28 metric 10
+		external 217.31.53.200/29 metric 10
+		external 217.31.54.0/28 metric 10
+		external 217.31.54.16/28 metric 10
+		external 217.31.54.32/28 metric 10
+		external 217.31.54.48/28 metric 10
+		external 217.31.54.64/28 metric 10 via 217.31.48.4
+		external 217.31.54.80/28 metric 10
+        	external 217.31.54.96/28 metric 10
+		external 217.31.54.112/28 metric 10
+		external 217.31.54.128/26 metric 10 via 217.31.48.4
+		external 217.31.54.192/27 metric 10
+		external 217.31.54.224/27 metric 10 via 217.31.48.4
+		external 217.31.55.0/27 metric 10
+		external 217.31.55.32/27 metric 10
+		external 217.31.55.64/27 metric 10
+		external 217.31.55.96/27 metric 10 via 217.31.48.4
+		external 217.31.55.128/25 metric 10
+		external 217.31.56.0/24 metric 10
+		external 217.31.57.0/24 metric 10
+		external 217.31.58.0/24 metric 10 via 217.31.48.4
+		external 217.31.59.0/24 metric 10 via 217.31.48.4
+		external 217.31.60.0/28 metric 10 via 217.31.48.6
+		external 217.31.60.16/28 metric 10 via 217.31.48.6
+		external 217.31.60.64/26 metric 10 via 217.31.48.4
+		external 217.31.60.80/29 metric 10 via 217.31.48.4
+		external 217.31.61.0/24 metric 10
+		external 217.31.62.0/25 metric 10
+		external 217.31.62.128/25 metric 10
+		external 62.109.128.0/25 metric 10
+		external 62.109.128.128/27 metric 10
+		external 62.109.129.0/24 metric 10
+		external 62.109.130.0/24 metric 10
+		external 62.109.131.0/25 metric 10
+		external 62.109.131.128/25 metric 10 via 217.31.48.6
+		external 62.109.132.0/24 metric 10
+		external 62.109.133.0/24 metric 10
+		external 62.109.134.0/24 metric 10
+		external 62.109.135.0/24 metric 10 via 217.31.48.6
+		external 62.109.140.0/25 metric 10
+		external 62.109.140.128/26 metric 10
+		external 62.109.140.192/28 metric 10 via 217.31.48.4
+		external 62.109.142.0/24 metric 10
+		external 62.109.144.128/25 metric 10
+		external 62.109.145.0/25 metric 10
+		external 62.109.146.0/24 metric 10
+
+	router 217.31.48.123
+		distance 100
+		network 217.31.48.88/30 metric 25
+        	network 217.31.48.96/30 metric 10
+		network 217.31.48.104/30 metric 12
+		network 217.31.48.0/28 metric 10
+		external 0.0.0.0/0 metric 11 tag 00000001
+		external 10.0.0.0/8 metric 10
+		external 62.109.128.0/19 metric 10
+		external 78.152.46.40/30 metric 10
+		external 91.210.16.0/22 metric 10
+		external 94.124.104.40/30 metric 10
+		external 94.124.104.60/30 metric 10
+		external 172.16.0.0/12 metric 10
+		external 188.227.128.0/19 metric 10
+		external 192.168.0.0/16 metric 10
+		external 217.31.48.0/20 metric 10
+		external 217.31.48.64/30 metric 10
+		external 217.31.48.76/30 metric 10
+		external 217.31.48.84/30 metric 10
+		external 217.31.48.123/32 metric 10
+		external 62.109.141.0/25 metric 10
+
+	router 217.31.48.125
+		distance 110
+		network 217.31.48.92/30 metric 25
+		network 217.31.48.104/30 metric 12
+		network 217.31.48.100/30 metric 10000
+		network 217.31.48.96/30 metric 10
+		network 217.31.48.88/30 metric 25
+		external 91.210.16.0/22 metric 10
+		external 188.227.128.0/19 metric 10
+		external 192.168.0.0/16 metric 10
+		external 216.66.80.240/30 metric 10
+		external 217.31.48.0/20 metric 10
+		external 217.31.48.16/28 metric 10
+		external 217.31.48.72/30 metric 10
+		external 217.31.48.125/32 metric 10
+		external 0.0.0.0/0 metric 10 tag 00000001
+		external 10.0.0.0/8 metric 10
+		external 62.109.128.0/19 metric 10
+		external 82.119.252.64/30 metric 10
+		external 172.16.0.0/12 metric 10
+
+	router 217.31.48.194
+        	distance 200
+		network 217.31.48.192/29 metric 100
+		external 217.31.48.200/29 metric 100
+
+	router 217.31.48.195
+		distance 200
+		network 217.31.48.192/29 metric 100
+		external 217.31.48.200/29 metric 100
+
+	network 217.31.48.0/28
+		dr 217.31.48.122
+		distance 100
+		router 217.31.48.122
+		router 217.31.48.5
+		router 217.31.48.9
+		router 217.31.48.14
+		router 217.31.48.121
+		router 217.31.48.123
+
+	network 217.31.48.32/28
+		dr 217.31.48.122
+		distance 110
+		router 217.31.48.122
+		router 217.31.48.36
+
+	network 217.31.48.88/30
+		dr 217.31.48.125
+		distance 125
+		router 217.31.48.125
+		router 217.31.48.123
+
+	network 217.31.48.92/30
+		dr 217.31.48.125
+		distance 112
+		router 217.31.48.125
+		router 217.31.48.122
+
+	network 217.31.48.96/30
+		dr 217.31.48.125
+		distance 110
+		router 217.31.48.125
+		router 217.31.48.123
+        
+	network 217.31.48.100/30
+		dr 217.31.48.125
+		distance 10110
+		router 217.31.48.125
+		router 217.31.48.20
+
+	network 217.31.48.104/30
+		dr 217.31.48.125
+		distance 112
+		router 217.31.48.125
+		router 217.31.48.123
+
+	network 217.31.48.192/29
+		dr 217.31.48.122
+		distance 200
+		router 217.31.48.122
+		router 217.31.48.121
+		router 217.31.48.194
+		router 217.31.48.195

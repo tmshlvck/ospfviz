@@ -198,9 +198,9 @@ def graph_gen(current_graph, diff_graph,filename=None,draw_external=False):
 
     gr.layout(prog='neato')
     if filename:
-        gr.draw(filename,format='png')
+        gr.draw(filename,format='svg')
     else:
-        print gr.draw(format='png')
+        print gr.draw(format='svg')
 
 
 def load_data(filename):
@@ -255,7 +255,7 @@ Options:
 
 def main():
     try:
-        options,remainder = getopt.getopt(sys.argv[1:], 'o:i:esh:',
+        options,remainder = getopt.getopt(sys.argv[1:], 'o:i:es:h',
                                           ['output=',
                                            'input=',
                                            'external',
